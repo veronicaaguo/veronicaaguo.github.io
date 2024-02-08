@@ -1,6 +1,6 @@
 body {
-	margin: 0;
-	padding: 0;
+	margin: 20px;
+	padding: 50px;
 	font-family: Arial, sans-serif;
 }
 
@@ -19,14 +19,7 @@ header {
 }
 
 main {
-	padding-top: 70px;
-}
-
-.logo {
-	font-size: 24px;
-	font-weight: bold;
-	text-decoration: none;
-	color: #fff;
+	padding-top: 110px;
 }
 
 nav ul {
@@ -45,20 +38,14 @@ nav a {
 	color: #fff;
 }
 
-.social-icons {
-	display: flex;
-	align-items: center;
-}
-
-.social-icons img {
-	height: 30px;
-	margin-left: 10px;
-}
-
 .project-card {
     background-color: purple; 
     border-radius: 10px; 
     padding: 20px; 
     margin-bottom : 20px; 
     max-width : 400px; 
+ }
+
+ .section {
+	height: 500px;
  }
