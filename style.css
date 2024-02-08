@@ -1,7 +1,9 @@
 body {
-	margin: 20px;
-	padding: 50px;
-	font-family: Arial, sans-serif;
+	background-color: #000;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    padding: 0px;
 }
 
 header {
@@ -9,7 +11,7 @@ header {
 	top: 0;
 	right: 0;
 	left: 0;
-	background-color: #333;
+	background-color: black;
 	color: #fff;
 	display: flex;
 	align-items: center;
@@ -19,24 +21,38 @@ header {
 }
 
 main {
-	padding-top: 110px;
+	padding-top: 80px;
+}
+
+/* This will apply to all elements with an id, adjust as needed */
+[id]:before { 
+	display: block; 
+	content: " "; 
+	margin-top: -70px; /* This should be equal to your header's height */
+	height: 70px; /* This should be equal to your header's height */
+	visibility: hidden; 
 }
 
 nav ul {
 	list-style: none;
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	display: flex;
 }
 
 nav li {
-	margin: 0 10px;
+	margin: 0px 10px;
 }
 
 nav a {
 	text-decoration: none;
 	color: #fff;
+	display: flex;
 }
+
+.section {
+	height: 500px;
+ }
 
 .project-card {
     background-color: purple; 
@@ -44,8 +60,4 @@ nav a {
     padding: 20px; 
     margin-bottom : 20px; 
     max-width : 400px; 
- }
-
- .section {
-	height: 500px;
  }
