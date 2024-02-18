@@ -1,8 +1,10 @@
+/* color theme: #ff80b0, #c484fc, #5cf4fb, #50ff8f */
+
 body {
 	background-color: #000;
     color: #fff;
     font-family: 'Papyrus';
-	font-size: 16pt;
+	font-size: 14pt;
     margin: 20px;
     padding: 0px;
 }
@@ -19,20 +21,28 @@ header {
 	justify-content: space-between;
 	padding: 20px;
 	box-sizing: border-box;
+	z-index: 2;
 }
 
 main {
 	padding-top: 80px;
 }
 
-/* This will apply to all elements with an id, adjust as needed */
 [id]:before { 
 	display: block; 
 	content: " "; 
-	margin-top: -70px; /* This should be equal to your header's height */
-	height: 70px; /* This should be equal to your header's height */
+	margin-top: -70px;
+	height: 70px;
 	visibility: hidden; 
 }
+
+section {
+	min-height: 300px;
+	padding: 80px 20px 100px 20px;
+ }
+
+
+/* NAVBAR */
 
 nav ul {
 	list-style: none;
@@ -50,10 +60,6 @@ nav a {
 	color: #fff;
 }
 
-.section {
-	height: 500px;
- }
-
 .social-icons {
 	display: flex;
 	align-items: center;
@@ -64,10 +70,132 @@ nav a {
 	margin-left: 10px;
 }
 
+
+/* ABOUT */
+
+#about {
+	display: flex;
+	justify-content: center;
+}
+
+.text-content {
+    width: 60%;
+	padding-right: 300px;
+}
+
+.image-content {
+    width: 40%;
+}
+
+.image-content img {
+	height: 350px;
+	border-radius: 10px;
+}
+
+
+/* EDUCATION & EXPERIENCE */
+
+.timeline ul {
+	padding: 50px 0;
+  }
+  
+  .timeline ul li {
+	list-style-type: none;
+	position: relative;
+	width: 6px;
+	margin: 0 auto;
+	padding-top: 50px;
+	background: #fff;
+  }
+  
+  .timeline ul li::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: inherit;
+	z-index: 1;
+  }
+  
+  .timeline ul li div {
+	position: relative;
+	bottom: 0;
+	width: 400px;
+	padding: 15px;
+	background: #ff80b0;
+	border-radius: 10px; 
+  }
+  
+  .timeline ul li div::before {
+	content: "";
+	position: absolute;
+	bottom: 7px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+  }
+  
+  .timeline ul li:nth-child(odd) div {
+	left: 45px;
+  }
+  
+  .timeline ul li:nth-child(odd) div::before {
+	left: -15px;
+	border-width: 8px 16px 8px 0;
+	border-color: transparent #ff80b0 transparent transparent;
+  }
+  
+  .timeline ul li:nth-child(even) div {
+	left: -468px;
+  }
+  
+  .timeline ul li:nth-child(even) div::before {
+	right: -15px;
+	border-width: 8px 0 8px 16px;
+	border-color: transparent transparent transparent #ff80b0;
+  }
+  
+  time {
+	display: block;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 8px;
+  }
+ 
+  
+/* PROJECTS */
+
+.project-cards {
+	display: flex;
+	justify-content: space-between;
+}
+
 .project-card {
-    background-color: purple; 
-    border-radius: 10px; 
+	border-radius: 10px; 
     padding: 20px; 
     margin-bottom : 20px; 
-    max-width : 400px; 
+    min-width : 400px;
+
+}
+
+.project-card img {
+	height: 350px;
+	border-radius: 10px;
+	align-self: center;
+}
+
+#project-card-1 {
+    background-color: #b982e8; 
+ }
+
+#project-card-2 {
+    background-color:#4bd1ec;    
+ }
+
+#project-card-3 {
+    background-color:#6fe89b; 
  }
