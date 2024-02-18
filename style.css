@@ -1,7 +1,8 @@
 body {
 	background-color: #000;
     color: #fff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Papyrus';
+	font-size: 16pt;
     margin: 20px;
     padding: 0px;
 }
@@ -47,12 +48,21 @@ nav li {
 nav a {
 	text-decoration: none;
 	color: #fff;
-	display: flex;
 }
 
 .section {
 	height: 500px;
  }
+
+.social-icons {
+	display: flex;
+	align-items: center;
+}
+
+.social-icons img {
+	height: 30px;
+	margin-left: 10px;
+}
 
 .project-card {
     background-color: purple; 
